@@ -26,15 +26,17 @@ branch_labels = None
 depends_on = None
 
 def upgrade():
-    with op.batch_alter_table('pepper_plant', schema=None) as batch_op:
-        batch_op.alter_column(
-            'dead',
-            existing_type=sa.Boolean(),
-            type_=sa.Integer(),
-            postgresql_using="CASE WHEN dead THEN 1 ELSE 0 END"
-        )
-        # If there are additional alterations (like adding the fruits column), include them here.
-        batch_op.add_column(sa.Column('fruits', sa.Integer(), nullable=False, server_default="0"))
+       with op.batch_alter_table('pepper_plant', schema=None) as batch_op:
+              batch_op.alter_column(
+                     'dead',
+                     existing_type=sa.Boolean(),
+                     type_=sa.Integer(),
+                     postgresql_using="CASE WHEN dead THEN 1 ELSE 0 END"
+              )
+       # Remove the add_column call for fruits since it already exists:
+       # batch_op.add_column(sa.Column('fruits', sa.Integer(), nullable=False, server_default="0"))
+
+
 
 def downgrade():
     with op.batch_alter_table('pepper_plant', schema=None) as batch_op:
