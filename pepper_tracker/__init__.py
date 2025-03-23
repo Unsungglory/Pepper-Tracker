@@ -12,7 +12,13 @@ login_manager = LoginManager()
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'default-secret-key')
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL') or 'sqlite:///local.db'
+
+    db_url = os.environ.get('DATABASE_URL')
+    if db_url and db_url.startswith("postgres://"):
+        # Replace postgres:// with postgresql:// (only the first occurrence)
+        db_url = db_url.replace("postgres://", "postgresql://", 1)
+    app.config['SQLALCHEMY_DATABASE_URI'] = db_url or 'sqlite:///local.db'
+
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     # Initialize extensions
@@ -24,8 +30,8 @@ def create_app():
     # Register blueprints
     from pepper_tracker.auth import auth_bp
     app.register_blueprint(auth_bp)
-
-    from pepper_tracker.main import main_bp  # Updated import
+    from pepper_tracker.main import main_bp
     app.register_blueprint(main_bp)
 
     return app
+
