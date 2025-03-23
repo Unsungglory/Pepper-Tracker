@@ -9,6 +9,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "Orange Scotch Bonnets",
@@ -18,6 +19,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "Red Scotch Bonnets",
@@ -27,6 +29,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },  
     {
         "type": "NuMex Big Jim",
@@ -36,6 +39,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "NuMex Joe Parker",
@@ -45,6 +49,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "NuMex Chili",
@@ -54,6 +59,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "NuMex Twilight",
@@ -63,6 +69,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "NuMex 6-4",
@@ -72,6 +79,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "NuMex Ornamental",
@@ -81,6 +89,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "NuMex Sandia",
@@ -90,6 +99,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "NuMex Lemon Spice",
@@ -99,6 +109,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "Red Peters",
@@ -108,6 +119,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "Bulgarian Carrot Peppers",
@@ -117,6 +129,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "Jalapeno Gigante",
@@ -126,6 +139,7 @@ plants = [
         "seedlings": 0,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "Mammoth Jalapeno",
@@ -135,6 +149,7 @@ plants = [
         "seedlings": 1,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
     {
         "type": "Big Bertha Bell",
@@ -144,5 +159,6 @@ plants = [
         "seedlings": 1,
         "hardening": 0,
         "plants": 0,
+        "year": 2025,
     },
 ]

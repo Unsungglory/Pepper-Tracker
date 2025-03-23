@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "plant"
+name = "pepper-tracker"
 version = "0.1.0"
 description = "Plant Tracker"
 authors = ["Nick Martin"]
@@ -9,6 +9,11 @@ readme = "README.md"
 python = "^3.10"
 flask = "^3.1.0"
 gunicorn = "^23.0.0"
+flask-sqlalchemy = "^3.1.1"
+flask-login = "^0.6.3"
+flask-migrate = "^4.1.0"
+flask-wtf = "^1.2.2"
+python-dotenv = "^1.0.1"
 
 
 [build-system]
