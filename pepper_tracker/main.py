@@ -9,7 +9,7 @@ main_bp = Blueprint('main', __name__)
 @main_bp.route('/')
 def index():
     # Fetch all pepper plant records
-    peppers = PepperPlant.query.all()
+    peppers = PepperPlant.query.order_by(PepperPlant.germinated.desc()).all()
     
     # Calculate totals
     totals = {
